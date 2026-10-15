@@ -1,0 +1,18 @@
+import streamlit as st
+
+st.set_page_config(
+    page_title="My Streamlit App",
+    page_icon="🚀",
+    layout="centered"
+)
+
+st.title("🚀 My Streamlit App")
+st.write("Welcome to your first Streamlit application!")
+
+name = st.text_input("Enter your name:")
+
+if name:
+    st.success(f"Hello, {name}! Welcome to Streamlit.")
+
+st.subheader("About")
+st.write("This is a simple interactive web application built with Python and Streamlit.")
