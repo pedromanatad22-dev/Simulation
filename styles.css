@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
+  }
+}
+
+.sim-shell {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sim-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.sim-frame {
+  display: block;
+  width: 100%;
+  height: 100dvh;
+  border: 0;
+  flex: 1;
+}
