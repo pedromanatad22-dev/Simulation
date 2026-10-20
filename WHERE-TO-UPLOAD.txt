@@ -1,0 +1,13 @@
+Upload these files to your GitHub repository (they replace/add to what is there):
+
+  index.html                                     -> main (root) folder
+  netlify.toml                                   -> main (root) folder   (adds the /api/training-assistant route)
+  netlify/functions/training-assistant.js        -> netlify/functions folder   (NEW file: the Gemini coach)
+  README.md, .env.example                        -> main folder (optional, documentation)
+
+Your existing GEMINI_API_KEY in Netlify is reused. Nothing else to configure.
+Optional Netlify variables: GEMINI_TRAINING_MODEL, TRAINING_FALLBACKS, TRAINING_AI=off.
+
+After Netlify shows "Published":
+  1. Open https://YOUR-SITE.netlify.app/api/training-assistant  -> it must show "configured":true
+  2. Turn Training Mode ON, start a call, and watch the right panel: "Coached by Gemini".
